@@ -10,9 +10,10 @@ class Triangles
     side_array.sort!()
     if(side_array[0] + side_array[1] <= side_array[2])
       return "not a triangle"
-    end
-    if (@side1 == @side2 && @side2 == @side3)
+    elsif (side_array[0] == side_array[1] && side_array[1] == side_array[2])
       return "equilateral"
+    elsif(side_array[0] == side_array[1] || side_array[1] == side_array[2])
+      return "isosceles"
     end
   end
 end

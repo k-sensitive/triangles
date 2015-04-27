@@ -14,5 +14,9 @@ describe('Triangles') do
       expect(triangle_test.triangle_type()).to(eq('equilateral'))
     end
 
+    it('identifies an isosceles triangle') do
+      triangle_test = Triangles.new(4,7,7)
+      expect(triangle_test.triangle_type()).to(eq('isosceles'))
+    end
   end
 end
