@@ -14,6 +14,8 @@ class Triangles
       return "equilateral"
     elsif(side_array[0] == side_array[1] || side_array[1] == side_array[2])
       return "isosceles"
+    else
+      return "scalene"
     end
   end
 end

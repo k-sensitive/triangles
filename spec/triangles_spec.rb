@@ -18,5 +18,10 @@ describe('Triangles') do
       triangle_test = Triangles.new(4,7,7)
       expect(triangle_test.triangle_type()).to(eq('isosceles'))
     end
+
+    it('identifies a scalene triangle') do
+      triangle_test = Triangles.new(3,6,4)
+      expect(triangle_test.triangle_type()).to(eq('scalene'))
+    end
   end
 end
